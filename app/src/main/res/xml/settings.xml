@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/settings">
+        <ListPreference
+            android:key="turn"
+            android:title="@string/turn"
+            android:summary="@string/turnsum"
+            android:entryValues="@array/turn"
+            android:entries="@array/turn"/>
+        <ListPreference
+            android:key="marker"
+            android:title="@string/marker"
+            android:summary="@string/markersum"
+            android:entryValues="@array/marker"
+            android:entries="@array/marker"/>
+        <ListPreference
+            android:key="games"
+            android:title="@string/games"
+            android:summary="@string/gamessum"
+            android:entryValues="@array/games"
+            android:entries="@array/games"/>
+        <EditTextPreference
+            android:key="player1"
+            android:title="@string/p1"
+            android:summary="@string/p1sum"
+            android:dialogTitle="@string/p1sum"
+            android:maxLength="7"/>
+        <EditTextPreference
+            android:key="player2"
+            android:title="@string/p2"
+            android:summary="@string/p2sum"
+            android:dialogTitle="@string/p2sum"
+            android:maxLength="7"/>
+    </PreferenceCategory>
+</PreferenceScreen>
